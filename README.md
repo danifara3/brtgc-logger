@@ -17,15 +17,12 @@ import { serverLog } from "brtgc-logger";
 // Logs a warning in development or if `always: true`
 await serverLog("Something happened", { user: "admin" }, { level: "warn" });
 
-
-import { clientLog } from "brtgc-logger";
-
-// Logs to browser console and optionally sends to server
-clientLog("Hello from client!", { level: "info", sendToServer: true });
-
 ###Client (e.g. inside React components or frontend scripts)
 
+```ts
 import { clientLog } from "brtgc-logger";
 
 // Logs to browser console and optionally sends to server
 clientLog("Hello from client!", { level: "info", sendToServer: true });
+
+Happy coding!!!
