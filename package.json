@@ -1,0 +1,25 @@
+{
+  "name": "brtgc-logger",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+   "keywords": ["logger", "server", "typescript", "console", "colorful-logs"],
+  "author": "Adebiyi Oluwarotimi",
+  "license": "MIT"
+}
+
+{
+  "name": "brtgc-logger",
+  "version": "1.0.0",
+  "description": "Unified client and server logger for full-stack TypeScript apps",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": ["logger", "client", "server", "typescript", "fullstack", "console"],
+  "author": "BRTGC - Adebiyi Oluwarotimi",
+  "license": "MIT"
+}
