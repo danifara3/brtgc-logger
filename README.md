@@ -26,7 +26,6 @@ Optional server-side forwarding from the client
 
 Includes timestamp and user/device metadata
 
-
 ## 🚀 Usage
 
 ### Server (e.g. in API routes, backend services, CLI tools)
