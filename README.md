@@ -8,11 +8,13 @@ A lightweight and flexible logging utility for both client and server environmen
 
 Install via npm:
 
-```bash
+``bash
 npm install brtgc-logger
 
-```bash
+``bash
 npm install --save-dev brtgc-logger
+
+---
 
 ## ✨ Features
 
