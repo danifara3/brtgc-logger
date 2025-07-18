@@ -1,3 +1,5 @@
+import { formatTimestamp } from "./utils/timestampFormat";
+
 export interface ClientLogConfig {
   level?: "info" | "warn" | "error" | "debug";
   sendToServer?: boolean;
@@ -22,7 +24,8 @@ export function clientLog(...args: unknown[]) {
   }
 
   const { level = "info", sendToServer = false } = config;
-  const timestamp = new Date().toISOString();
+  const timestamp = formatTimestamp();
+
   const styleMap = {
     info: "color: blue;",
     warn: "color: orange;",
