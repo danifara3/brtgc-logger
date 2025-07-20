@@ -26,12 +26,17 @@ export function clientLog(...args: unknown[]) {
   const { level = "info", sendToServer = false } = config;
   const timestamp = formatTimestamp();
 
-  const styleMap = {
-    info: "color: blue;",
-    warn: "color: orange;",
-    error: "color: red;",
-    debug: "color: green;",
-  };
+const isDarkMode =
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+const styleMap = {
+  info: isDarkMode ? "color: #91cfff;" : "color: #004085;",
+  warn: isDarkMode ? "color: #ffcc66;" : "color: #856404;",
+  error: isDarkMode ? "color: #ff6b6b;" : "color: #721c24;",
+  debug: isDarkMode ? "color: #a5e075;" : "color: #155724;",
+};
+
 
   console.log(
     `%c[${level.toUpperCase()}] ${timestamp}`,
